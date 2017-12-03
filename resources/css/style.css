@@ -65,9 +65,7 @@ h1{
 }
 /*Main content section*/
 .main.container{
-  position: relative;
-  top: -4rem;
-  margin-top: 3rem;
+  margin-top: -1rem; /*offsets relative positioning that creates whitespace below footer and creates margin of 3 to element above*/
   margin-bottom: 5rem;
   justify-content: center;
 }
@@ -117,9 +115,20 @@ p{
 }
 /*Footer section*/
 .footer.container{
-  position: relative;
-  top: -4rem;
-  margin-top: 5rem;
+/*  position: relative;
+  top: -9rem;*/
+  margin-bottom: -9rem;
+  background-color: azure;
+}
+.company-footer{
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+.footer img{
+  margin-left: 4rem;
+  margin-right: 1rem;
+  max-height: 1.5rem;
 }
 
 
