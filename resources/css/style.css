@@ -97,17 +97,35 @@ h1{
 .info-section{
   margin: auto;
   display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.info-element{
+  max-width: 35%;
+  margin: 0 2.5%;
+}
+h4{
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+p{
+  margin-top: 1rem;
 }
 /*Footer section*/
 .footer.container{
   position: relative;
   top: -4rem;
+  margin-top: 5rem;
 }
 
 
 
 
 black borders
-div, header, .footer, nav, .container, .features, .feature {
+div, header, .footer, nav, .container, .features, .feature, .info-element, .info-section {
   border: solid black 1px;
 }
