@@ -35,6 +35,9 @@ header img{
 li{
   margin-right: 2rem;
 }
+.mobile{
+  display: none;
+}
 
 /*Banner section*/
 .banner{
@@ -65,7 +68,7 @@ h1{
 }
 /*Main content section*/
 .main.container{
-  margin-top: -1rem; /*offsets relative positioning that creates whitespace below footer and creates margin of 3 to element above*/
+  margin-top: -1rem; /*offsets relative positioning that creates whitespace below footer and creates margin of 3rem to element above*/
   margin-bottom: 5rem;
   justify-content: center;
 }
@@ -74,7 +77,7 @@ h1{
   display: flex;
 }
 .feature{
-  height: 8rem;
+  min-height: 8rem;
   max-width: 5rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -129,7 +132,7 @@ p{
 }
 
 /*Media query tablet size*/
-@media only screen and (max-width: 1024px) and (min-width: 481px){
+@media only screen and (max-width: 1024px) and (min-width: 631px){
   .container{
     max-width: 100%;
   }
@@ -146,16 +149,123 @@ p{
     position: relative;
     left: 0rem;
     margin-right: 2rem;
-
-  }*/
+  }
   h1{
     font-size: 1.33rem;
     padding: 0.75rem 4rem;
   }
 }
 
+/*Media query breakpoint menu bar*/
+@media only screen and (max-width: 630px) and (min-width: 554px){
+  /*from tablet media query*/
+  .container{
+    max-width: 100%;
+  }
+  header{
+    top: 0rem;
+  }
+  .banner{
+    height: 22rem;
+  }
+  .banner .container{
+    top: 8rem;
+  }
+  .headline{
+    position: relative;
+    left: 0rem;
+    margin-right: 2rem;
+  }
+  h1{
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+  /*from mobile media query*/
+  nav .desktop{
+    display: none;
+  }
+  nav .mobile{
+    display: flex;
+  }
+}
 
-black borders
-div, header, .footer, nav, .container, .features, .feature, .info-element, .info-section {
+/*Media query mobile size incl natural breakpoints*/
+@media only screen and (max-width: 553px){
+  /*from tablet media query*/
+  .container{
+    max-width: 100%;
+  }
+  header{
+    top: 0rem;
+  }
+  /*mobile only*/
+  .company-header .title{
+    display: none;
+  }
+  nav .desktop{
+    display: none;
+  }
+  nav .mobile{
+    display: flex;
+  }
+  .banner{
+    height: 17rem;
+    background-position: 20%;
+  }
+  .banner .container{
+    top: 12rem;
+  }
+  .headline{
+    position: static;
+    width: 100%;
+  }
+  h1{
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .main.container{
+    margin-top: -0.23rem; /*offsets relative positioning that creates whitespace below footer and creates margin of 3.77rem to element above*/
+    margin-bottom: 0rem;
+  }
+  .features{
+    display: block;
+  }
+  .feature{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .feature span{
+    font-size: 0.77rem;
+    padding: 1.54rem 0;
+  }
+  .info-section{
+    flex-wrap: wrap;
+    margin-top: 3.77rem;
+  }
+  .info-element{
+    max-width: 100%;
+    margin: 0;
+  }
+  p{
+    padding: 1rem 0.5rem 4rem 0.5rem;
+    font-size: 0.77rem;
+  }
+  .footer .title{
+    display: none;
+  }
+  .company-footer{
+    margin: auto;
+  }
+  .footer img{
+    margin: 0;
+  }
+
+
+}
+
+
+/*div, header, .footer, nav, .container, .features, .feature, .feature img, .feature span, .info-element, .info-section {
   border: solid black 1px;
 }
